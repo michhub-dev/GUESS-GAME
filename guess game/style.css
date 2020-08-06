@@ -1,0 +1,133 @@
+:root{
+    --lightgreen: lightcoral;
+    --purple: rgb(158, 33, 158);
+    --background: lightcyan;
+    --gradient-1:#343e;
+    --gradient-2: #2e3352;
+    --border: yellowgreen;
+}
+
+html{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+body{
+    width: 90vw;
+    margin: 0 auto;
+    background: radial-gradient(var(--gradient-1), var(--gradient-2));
+}
+
+footer{
+    text-align: right;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    color: hotpink;
+}
+
+main{
+    text-align: center;
+    background: var(--background);
+    border: solid var(--border);
+    border-width: 0 8px 8px 8px;
+    min-height: 80vh;
+    border-radius: 0 0 3rem 3rem;
+    padding: 1rem;
+    color: #112933;
+}
+
+h2{
+    font-size: 2.2rem;
+    margin: 8rem 0;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background: lightcoral;
+    padding: 2rem;
+    border-radius: 1rem 1rem 0 0;
+    
+}
+
+button:last-child{
+    background: var(--purple);
+    border-radius: 0 0 1rem 1rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+input{
+    border: 1px solid lightgray;
+    background: white;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    width: 16rem;
+    text-align: center;
+}
+
+#range{
+    display: flex;
+    background: var(--lightgreen);
+    height: 50px;
+    padding: 0;
+    margin: 0 0 4rem 0;
+}
+
+#rangeOutput{
+    font-size: 1.6rem;
+}
+
+.stats{
+    text-align: left;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info span{
+    font-size: 1.6rem;
+}
+
+#newGameButton{
+    border-radius: 0;
+}
+
+.flash{
+    animation: flash 1s infinite ;
+}
+
+@keyframes flash{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (min-width: 800px){
+    body{
+    width: 60vw;
+    }
+}
